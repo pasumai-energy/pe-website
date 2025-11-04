@@ -4,12 +4,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pasumai Energy Pvt. Ltd</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    </noscript>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+    <nav>
+        <div class="logo">
+            <div id="logo"><span id="logo-first">Pasumai</span> <span id="logo-second">Energy</span></div>
+        </div>
+        <ul class="nav-items">
+            <li><a href="">Home</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <div class="contact">
+            <button id="contact">Contact Us</button>
+        </div>
+    </nav>
+    <section class="landing">
+        <div class="content">
+            <h2>
+                Transforming energy. Sustaining the future.
+            </h2>
+            <p>
+                Pasumai Energy Pvt. Ltd is a clean-tech startup dedicated to accelerating the global transition toward
+                sustainable energy. Our mission is to provide innovative, affordable, and scalable green energy
+                solutions that empower communities, industries, and individuals to reduce their carbon footprint while
+                improving energy efficiency.
+            </p>
+        </div>
+    </section>
+    <section id="about">
+        <div class="content">
+            <h2><span>Our Team</span></h2>
+            <div class="team">
+                <div class="member">
+                    <img src="assets/mem-03.jpg" alt="profile">
+                    <div class="description">
+                        <p id="name">Dr. Ganesan P</p>
+                        <p id="role">Director</p>
+                        <p id="info">
+                        <p><strong>Specialization: </strong>Electrolyzers, Fuel Cell, Air-battery, Testing for Battery
+                            Management Systems (BMS)</p>
+                        <p><strong>PhD: </strong>Energy Systems Engineering - DGIST, South Korea</p>
+                        </p>
+                        <div class="connect">
+                            <div id="email"><a href="mailto:ganesan.p@vit.ac.in"><i class="fa fa-envelope"></i></a>
+                            </div>
+                            <div id="phone"><a href="tel:"><i class="fa fa-phone"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="assets/mem-01.jpg" alt="profile">
+                    <div class="description">
+                        <p id="name">Dr. Florence Gnana Poovathy J</p>
+                        <p id="role">Director</p>
+                        <p id="info">
+                        <p><strong>Specialization: </strong>Battery Management Systems for EVs, AI & Robotics,
+                            Image/Video Processing, Hydrogen Fuel Cell Control System, Recycling of Li</p>
+                        <p><strong>PhD: </strong></p>
+                        </p>
+                        <div class="connect">
+                            <div id="email"><a href="mailto:florence.poovathy@vit.ac.in"><i
+                                        class="fa fa-envelope"></i></a>
+                            </div>
+                            <div id="phone"><a href="tel:+918675462014"><i class="fa fa-phone"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="assets/mem-02.jpg" alt="profile">
+                    <div class="description">
+                        <p id="name">Dr. Sujoy Sarkar</p>
+                        <p id="role">Director</p>
+                        <p id="info">
+                        <p><strong>Specialization: </strong>Materials Science, Electrochemical Energy conversion and
+                            storage (Li/Na Battery, Supercapacitor, Fuel cells), Nanoelectrochemistry, Sensors</p>
+                        <p><strong>PhD: </strong>Materials Electrochemistry - Indian Institute of Science, Bangalore</p>
+                        </p>
+                        <div class="connect">
+                            <div id="email"><a href="mailto:sujoy.sarkar@vit.ac.in"><i class="fa fa-envelope"></i></a>
+                            </div>
+                            <div id="phone"><a href="tel:"><i class="fa fa-phone"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="assets/mem-04.jpg" alt="profile">
+                    <div class="description">
+                        <p id="name">Dr. Manavalla Sreekanth</p>
+                        <p id="info">
+                        <p><strong>Specialization: </strong>Thermodynamic analysis of thermal energy systems,
+                            Exergo-Economic analysis in IC engines, Regenerative Flow Machines</p>
+                        <p><strong>PhD: </strong>Fluidized Bed Combustion of Wood - Indian Institute of Technology,
+                            Madras</p>
+                        </p>
+                        <div class="connect">
+                            <div id="email"><a href="mailto:"><i class="fa fa-envelope"></i></a>
+                            </div>
+                            <div id="phone"><a href="tel:"><i class="fa fa-phone"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        Copyright &copy; year Pasumai Energy Pvt. Ltd. All rights reserved.
+    </footer>
+    <script>
+        const footer = document.getElementById('footer');
+        const year = new Date().getFullYear();
+        footer.innerHTML = `Copyright © ${year} Pasumai Energy Pvt. Ltd. All rights reserved.`;
+    </script>
 </body>
 
 </html>

@@ -2,4 +2,242 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-family: Poppins, sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #edfaee;
+}
+
+i {
+    font-size: 1.2rem !important;
+}
+
+nav {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr 1fr;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+#logo-first {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #2f7b33;
+}
+
+#logo-second {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #555555;
+}
+
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-items a {
+    color: black;
+    border: 1px solid transparent;
+    padding-bottom: 8px;
+    transition: all 0.25s ease;
+}
+
+.nav-items a:hover {
+    border-bottom: 1px solid black;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.contact #contact {
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: #2f7b33;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border-radius: 20px;
+}
+
+.contact #contact:hover {
+    background-color: #45a44a;
+}
+
+.landing {
+    min-height: calc(100vh - 2rem - 40px);
+    padding-top: 10rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("assets/lading-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.landing .content {
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    max-width: 800px;
+}
+
+.landing .content h2 {
+    color: white;
+    font-size: 3rem;
+    margin: 0.5rem 2rem;
+    text-align: center;
+}
+
+.landing .content p {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.75rem;
+    margin: 0.5rem 2rem;
+}
+
+#about {
+    padding: 2rem;
+    background-color: white;
+}
+
+#about h2 {
+    margin: 2rem 0 2rem 0;
+    text-align: center;
+}
+
+#about h2 span {
+    color: #2f7b33;
+    transition: all 0.25s ease;
+    border-bottom: 4px solid transparent;
+}
+
+#about span:hover {
+    border-bottom: 4px solid #5c825f;
+}
+
+#about .team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+#about .team .member {
+    background: #edfaee;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+#about .team .member img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.description #name {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.description #role,
+.description #info {
+    margin-top: 0.5rem;
+    color: #555555;
+}
+
+.description .connect {
+    display: flex;
+    margin-top: 1rem;
+    gap: 2rem;
+}
+
+#footer {
+    text-align: center;
+    padding: 0.25rem 0;
+}
+
+@media (max-width: 1000px) {
+    .landing {
+        padding-top: 8rem;
+    }
+
+    #about .team .member {
+        grid-template-columns: 1fr;
+    }
+
+    .team img {
+        max-width: 200px;
+        margin: auto;
+    }
+
+    .landing .content h2 {
+        font-size: 2.75rem;
+    }
+
+}
+
+@media (max-width: 721px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-items {
+        flex: 1;
+        display: none;
+    }
+
+    .logo {
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+
+    .landing {
+        padding-top: 6rem;
+    }
+
+    #about .team {
+        grid-template-columns: 1fr;
+    }
+
+    .team img {
+        max-width: 200px;
+        margin: auto;
+    }
+
+    .landing .content h2 {
+        font-size: 2.25rem;
+    }
+
+    .landing .content p {
+        font-size: 1rem;
+    }
+
+    #footer {
+        font-size: 0.75rem;
+    }
 }
