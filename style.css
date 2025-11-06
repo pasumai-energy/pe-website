@@ -87,10 +87,9 @@ nav {
 }
 
 .landing {
-    min-height: calc(100vh - 2rem - 40px);
-    padding-top: 10rem;
+    padding: 10rem 0 12rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("assets/lading-image.jpg");
+            rgba(0, 0, 0, 0.5)), url("assets/landing-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
