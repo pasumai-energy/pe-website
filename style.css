@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('./assets/fonts/OpenSans.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +10,7 @@
     list-style-type: none;
     text-decoration: none;
     color: black;
-    font-family: Poppins, sans-serif;
+    font-family: 'OpenSans', sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -89,7 +94,7 @@ nav {
 .landing {
     padding: 10rem 0 12rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("assets/landing-image.jpg");
+            rgba(0, 0, 0, 0.5)), url("assets/images/landing-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -124,17 +129,13 @@ nav {
 }
 
 #about h2 {
-    margin: 2rem 0 2rem 0;
+    margin: 2rem 0 4rem 0;
     text-align: center;
 }
 
 #about h2 span {
     color: #2f7b33;
-    transition: all 0.25s ease;
-    border-bottom: 4px solid transparent;
-}
-
-#about span:hover {
+    padding-bottom: 0.5rem;
     border-bottom: 4px solid #5c825f;
 }
 
