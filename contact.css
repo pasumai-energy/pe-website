@@ -155,10 +155,7 @@ textarea {
   grid-area: submit;
 }
 
-.submit submit {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.submit button {
   color: white;
   background-color: #2f7b33;
   border: none;
@@ -170,6 +167,14 @@ textarea {
 
 .submit button:hover {
   background-color: #45a44a;
+}
+
+#post-response-fname,
+#post-response-email,
+#post-response-phone,
+#post-response-msg,
+#post-response-form {
+  display: none;
 }
 
 .contact-form {
